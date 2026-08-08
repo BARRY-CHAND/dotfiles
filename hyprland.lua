@@ -6,17 +6,17 @@
 ---
 package.path = os.getenv("HOME") .. "/.config/hypr/lua/?.lua;" .. package.path
 
-require("monitors")
-require("startup")
-require("inputs")
+require("lua/monitors")
+require("lua/startup")
+require("lua/inputs")
 --require("keybinds")
 --require("animations")
 require("theme")
 
 --STILL IN CONF Files
-hl.exec_cmd("hyprctl keyword source ~/.config/hypr/keybinds.conf")
-hl.exec_cmd("hyprctl keyword source ~/.config/hypr/animations.conf")
-hl.exec_cmd("hyprctl keyword source ~/.config/hypr/windowrules.conf")
+--hl.exec_cmd("hyprctl keyword source ~/.config/hypr/keybinds.conf")
+--hl.exec_cmd("hyprctl keyword source ~/.config/hypr/animations.conf")
+--hl.exec_cmd("hyprctl keyword source ~/.config/hypr/windowrules.conf")
 -- Source Files
 
 -- source = $HOME/.config/hypr/monitors.conf -> requires manual conversion
